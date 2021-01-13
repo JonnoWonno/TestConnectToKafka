@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T2GwjkV3KxuNFUY4uSST0rHvlQ/78887EF/Q0x+56uvmIGvNyFDNzNtFat2uosSBDx7dF3lYbR8FW8KPQghoCQ==",
+  "dgSpecHash": "VsRnm9HI3jAWoQ+EY4HfZXsRVvD6mj17eYRc4q0oilwFr4BMQq/PmkdatAoONo8ZM5yX+x/rdoknC5VzmbWhYA==",
   "success": true,
-  "projectFilePath": "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
+  "projectFilePath": "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JonathanLindeque\\.nuget\\packages\\confluent.kafka\\1.5.0\\confluent.kafka.1.5.0.nupkg.sha512",
     "C:\\Users\\JonathanLindeque\\.nuget\\packages\\kafka-sharp\\1.4.3\\kafka-sharp.1.4.3.nupkg.sha512",
