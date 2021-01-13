@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+<ItemGroup>
+  <PackageReference Include="Confluent.Kafka" version="1.5.0" />
+  <PackageReference Include="Microsoft.Extensions.Hosting" version="3.1.6" />
+  <PackageReference Include="kafka-sharp" version="1.4.3" />
+  
+</ItemGroup>
+
+
+</Project>
