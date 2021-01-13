@@ -10,6 +10,29 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 /// https://www.youtube.com/watch?v=n_IQq3pze0s
+/*
+    docker pull confluentinc/cp-zookeeper                   //https://hub.docker.com/r/confluentinc/cp-zookeeper
+    docker pull confluentinc/cp-kafka                       //https://hub.docker.com/r/confluentinc/cp-kafka
+
+    // https://hub.docker.com/r/ches/kafka/
+    docker network create kafka
+    docker run -d --name=zookeeper --network=kafka -p 2181:2181 -e ZOOKEEPER_CLIENT_PORT=2181 -e ZOOKEEPER_TICK_TIME=2000 confluentinc/cp-zookeeper
+    docker logs zookeeper                                   //Confirm that it's running
+    docker run -d --name=kafka --network=kafka -p 9092:9092 -e KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 confluentinc/cp-kafka
+    docker logs kafka                                       //Confirm that it's running
+
+    Add 'Package References' to csproj file
+        // https://www.nuget.org/packages/Confluent.Kafka/ - Confluent's .NET Client for Apache Kafka 
+        <PackageReference Include="Confluent.Kafka" Version="1.5.3" />
+
+        // https://www.nuget.org/packages/Microsoft.Extensions.Hosting/ - Hosting and startup infrastructures for applications.
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+
+        // https://www.nuget.org/packages/kafka-sharp/ - High Performance .NET Kafka Client
+        <PackageReference Include="kafka-sharp" Version="1.4.3" />
+
+*/
+
 
 
 
