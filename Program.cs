@@ -38,7 +38,7 @@ namespace TestConnectToKafka
     {
         private ILogger<KafkaConsumerHostedService> _logger;
         private ClusterClient _cluster;
-        private IConsumer<Null, string> _consumer;
+
         public KafkaConsumerHostedService(ILogger<KafkaConsumerHostedService> logger)
         {
             _logger = logger;
@@ -50,10 +50,10 @@ namespace TestConnectToKafka
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _cluster.ConsumeFromLatest("Demo");
+            _cluster.ConsumeFromLatest("demo");
             _cluster.MessageReceived += record => 
             {
-                _logger.LogInformation($"Received: {Encoding.UTF8.GetString(record.Value as byte[])}");
+                _logger.LogInformation($"The Received Value: {Encoding.UTF8.GetString(record.Value as byte[])}");
             };
 
             return Task.CompletedTask;
@@ -61,7 +61,7 @@ namespace TestConnectToKafka
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            _consumer?.Dispose();
+            _cluster?.Dispose();
             return Task.CompletedTask;
         }
     }
@@ -98,7 +98,7 @@ namespace TestConnectToKafka
             for(var i = 0;  i < 100; i++)
             {
                 var value  = $"Hello World {i}";
-                _logger.LogInformation($"Received: {value}");
+                _logger.LogInformation($"The Produced Value: {value}");
                 await _producer.ProduceAsync("demo", new Message<Null, string>()
                 {
                     Value = value

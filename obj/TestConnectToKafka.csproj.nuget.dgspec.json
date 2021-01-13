@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj": {}
+    "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj": {}
   },
   "projects": {
-    "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj": {
+    "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
+        "projectUniqueName": "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
         "projectName": "TestConnectToKafka",
-        "projectPath": "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
+        "projectPath": "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\TestConnectToKafka.csproj",
         "packagesPath": "C:\\Users\\JonathanLindeque\\.nuget\\packages\\",
-        "outputPath": "d:\\[JONATHAN]\\Projects\\TestConnectToKafka\\obj\\",
+        "outputPath": "D:\\[JONATHAN]\\Projects\\TestConnectToKafka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JonathanLindeque\\AppData\\Roaming\\NuGet\\NuGet.Config",
