@@ -5,10 +5,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="Confluent.Kafka" version="1.5.0" />
-  <PackageReference Include="Microsoft.Extensions.Hosting" version="3.1.6" />
+  <!-- <PackageReference Include="Confluent.Kafka" version="1.5.0" /> -->
+  <PackageReference Include="Confluent.Kafka" Version="1.5.3" />
+  <!-- <PackageReference Include="Microsoft.Extensions.Hosting" version="3.1.6" /> -->
+  <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
   <PackageReference Include="kafka-sharp" version="1.4.3" />
-  
 </ItemGroup>
 
 
